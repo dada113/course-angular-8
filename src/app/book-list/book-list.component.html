@@ -1,0 +1,11 @@
+<section>
+<app-book-item *ngFor="let book of books"
+    [book]="book"
+    (selects) = "onSelect($event)"
+></app-book-item>
+</section>
+
+<app-book-form [book]="selectedBook"
+    (saves)="onSave($event)">
+</app-book-form>
+

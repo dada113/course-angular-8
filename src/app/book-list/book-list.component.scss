@@ -1,0 +1,17 @@
+:host {
+    height:calc(100vh - 90px);
+    display: flex;
+}
+
+    section{
+        overflow-y: scroll;
+    }
+
+app-book-item:nth-child(even){
+    background-color: lightgray;
+}
+
+app-book-item:hover{
+    background-color: rgb(89, 224, 89);
+    cursor: pointer;
+}

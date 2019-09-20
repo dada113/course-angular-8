@@ -1,0 +1,11 @@
+<h1>Book details</h1>
+<form [formGroup]="form" (ngSubmit)="onSubmit()">
+    <input formControlName="id" type="hidden">
+    <label>Title: <input formControlName="name"></label>
+    <label>Author: <input formControlName="author"></label> 
+    <label>Published: <input type="number" formControlName="published"></label>
+    <label>Available: <input type="checkbox" formControlName="available"></label>
+    <label>Cover URL: <input formControlName="coverUrl"></label>
+
+    <button type="submit" [disabled]="!form.valid">Save</button> 
+</form>
